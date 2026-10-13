@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - The Fumigator</title>
+  <meta name="description" content="Get in touch with The Fumigator for a free inspection and quote. 24/7 emergency services available.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">The Fumigator</a>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Get your free quote today or call our emergency line.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2>Get In Touch</h2>
+          <div class="info-item">
+            <strong>Phone:</strong>
+            <p>(555) 123-4567</p>
+          </div>
+          <div class="info-item">
+            <strong>Emergency:</strong>
+            <p>(555) 987-6543 (24/7)</p>
+          </div>
+          <div class="info-item">
+            <strong>Email:</strong>
+            <p>info@thefumigator.com</p>
+          </div>
+          <div class="info-item">
+            <strong>Address:</strong>
+            <p>123 Pest Free Drive<br>Suite 100<br>Cityville, ST 12345</p>
+          </div>
+          <div class="info-item">
+            <strong>Hours:</strong>
+            <p>Mon - Fri: 7:00 AM - 7:00 PM<br>Sat: 8:00 AM - 4:00 PM<br>Sun: Emergency only</p>
+          </div>
+        </div>
+        <div class="contact-form">
+          <h2>Request a Quote</h2>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+              <label for="service">Service Needed</label>
+              <select id="service" name="service">
+                <option value="">Select a service...</option>
+                <option value="residential">Residential Fumigation</option>
+                <option value="commercial">Commercial Fumigation</option>
+                <option value="termite">Termite Control</option>
+                <option value="bedbug">Bed Bug Treatment</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+          <div id="form-success" class="form-success" style="display:none;">
+            <p>&#10003; Thank you! Your message has been sent. We'll get back to you shortly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>The Fumigator</h3>
+          <p>Professional fumigation services you can trust. Serving residential and commercial clients.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact Info</h4>
+          <ul>
+            <li>Phone: (555) 123-4567</li>
+            <li>Email: info@thefumigator.com</li>
+            <li>24/7 Emergency: (555) 987-6543</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 The Fumigator. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
