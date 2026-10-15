@@ -20,6 +20,26 @@ document.addEventListener('DOMContentLoaded', function () {
   if (contactForm) {
     contactForm.addEventListener('submit', function (e) {
       e.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const serviceSelect = document.getElementById('service');
+      const service = serviceSelect.value ? serviceSelect.options[serviceSelect.selectedIndex].text : '';
+      const propertySelect = document.getElementById('property');
+      const property = propertySelect.value ? propertySelect.options[propertySelect.selectedIndex].text : '';
+      const location = document.getElementById('location').value.trim();
+      const date = document.getElementById('date').value;
+
+      let message = 'New Inquiry - The Fumigator Website\n\n';
+      message += 'Name: ' + name + '\n';
+      if (phone) message += 'Phone: ' + phone + '\n';
+      if (service) message += 'Service: ' + service + '\n';
+      if (property) message += 'Property Type: ' + property + '\n';
+      if (location) message += 'Location: ' + location + '\n';
+      if (date) message += 'Preferred Date: ' + date + '\n';
+
+      window.open('https://wa.me/254706545513?text=' + encodeURIComponent(message), '_blank');
+
       contactForm.reset();
       contactForm.style.display = 'none';
       formSuccess.style.display = 'block';
@@ -27,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
       setTimeout(function () {
         formSuccess.style.display = 'none';
         contactForm.style.display = 'block';
-      }, 5000);
+      }, 6000);
     });
   }
 
